@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/marki.im/static/css/main.d651b62f.css",
+    "main.js": "/marki.im/static/js/main.814e0c56.js",
+    "index.html": "/marki.im/index.html",
+    "main.d651b62f.css.map": "/marki.im/static/css/main.d651b62f.css.map",
+    "main.814e0c56.js.map": "/marki.im/static/js/main.814e0c56.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d651b62f.css",
+    "static/js/main.814e0c56.js"
+  ]
+}
