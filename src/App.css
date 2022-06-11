@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap');
+
+@keyframes animateBg {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 0%; }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+margin: 0;
+padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body, h1 {
+  background-size: 400% 100%;
+  animation: animateBg 14s linear infinite;
+  background-image: linear-gradient(90deg,#fecb3e,#ffa57d,#ff8647,#fecb3e,#ffa57d);
+}
+
+body {
+  height: 100%;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  font-family: 'Baloo Tammudu 2', sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  padding: 5vw 8vw;
+  background: rgba(255,255,255,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8vw;
+  overflow: hidden;
+  cursor: default;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  height: 14vw;
+  text-align: center;
+  font-size: 12vw;
+  line-height: 19.5vw;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  color: #ddd;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
 }
